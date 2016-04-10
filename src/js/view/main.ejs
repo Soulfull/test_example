@@ -1,0 +1,24 @@
+<div class="cafe">
+	<div class="cafe__controls">
+		<button class="button button--like">Like</button>
+		<button class="button button--dislike">Dislike</button>
+		<button class="button button--skip">Skip</button>
+	</div>
+	<div class="cafe__preview">
+		<img class="cafe__img" src="<%= obj.photos[0].sizeBox %>" alt="">
+	</div>
+	<div class="cafe-user">
+		<span class="cafe-user__name"><%= name %>,</span>
+		<span class="cafe-user__age"><%= age %> <%= ageText %>,</span>
+		<span class="cafe-user__city"><%= cityName %></span>
+	</div>
+	<ul class="cafe__thumb-list">
+		<% obj.photos.forEach(function(item, index) { %>
+			<li class="cafe__thumb">
+				<a href="<%= item.sizeBox %>" class="cafe__link <% if (index === 0) { %> cafe__link--active <% } %>">
+					<img src="<%= item.size48 %>" alt="">
+				</a>
+			</li>
+		<% }); %>
+	</ul>
+</div>

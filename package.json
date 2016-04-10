@@ -1,0 +1,21 @@
+{
+	"name": "mihail_smolin",
+	"version": "1.0.0",
+	"description": "test exercise",
+	"main": "webpack.config.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"devDependencies": {
+		"autoprefixer": "^6.3.6",
+		"style-loader": "^0.13.0",
+		"css-loader": "^0.23.1",
+		"raw-loader": "^0.5.1",
+		"lodash.template": "^3.6.2",
+		"path": "^0.12.7",
+		"postcss-loader": "^0.8.2",
+		"precss": "^1.4.0",
+		"webpack": "^1.12.9",
+		"webpack-dev-server": "^1.14.1"
+	}
+}
